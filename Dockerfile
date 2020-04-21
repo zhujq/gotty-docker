@@ -5,7 +5,7 @@ ENV LANGUAGE en_US:en
 
 RUN apt-get -y update && \
     apt-get install -y curl && \
-    curl -sLk https://github.com/yudai/gotty/releases/download/v2.0.0-alpha.3/gotty_2.0.0-alpha.3_linux_amd64.tar.gz \
+    curl -sLk https://github.com/yudai/gotty/releases/download/v1.0.1/gotty_linux_amd64.tar.gz \
     | tar xzC /usr/local/bin && \
     apt-get purge --auto-remove -y curl && \
     apt-get clean && \
